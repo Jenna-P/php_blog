@@ -33,7 +33,7 @@
                                     <label for="exampleInputPassword1">Password</label>
                                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                 </div>
-                                <button type="submit" class="btn oneMusic-btn mt-30">Signup</button>
+                                <button type="submit" class="btn">Signup</button>
                             </form>
                             <div>
                             <p class="text-center">Do you already have an account? <a data-toggle="tab" href="login.php">Sign In</a></p>
