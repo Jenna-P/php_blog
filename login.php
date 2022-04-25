@@ -50,24 +50,42 @@ if($user == "test" && $pass == "1234") {
 
 </head>
 <body>
-    <div class="box">
-    <h2>Login</h2>
-    <form>
-        <div class="inputBox">
-        <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);" value="">
-        <label>Username</label>
+<?php require('lib/header.php'); ?>
+    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(https://storage.needpix.com/rsynced_images/countryside-2371480_1280.jpg);">
+        <div class="bradcumbContent">
+            <h2>Login</h2>
         </div>
-        <div class="inputBox">
-        <input type="password" name="password" required value=""
-                onkeyup="this.setAttribute('value', this.value);"
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
-        <label>Password</label>
+    </section>
+    <!-- ##### Login Area Start ##### -->
+    <section class="login-area section-padding-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="login-content">
+                       
+                        <!-- Login Form -->
+                        <div class="login-form">
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Username</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn oneMusic-btn mt-30">Login</button>
+                            </form>
+                            <div>
+                            <p class="text-center">Not a member? <a data-toggle="tab" href="#signup">Sign Up</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <input type="submit" name="sign-in" value="Sign In">
-    </form>
-    </div>
-   
+    </section>
+    <!-- ##### Login Area End ##### -->
 </body>
 </html>
 
