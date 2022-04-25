@@ -44,7 +44,7 @@
               </ul>
               
               <ul class="nav navbar-nav navbar-right navbar-social">
-                <?php if(isset($_SESSION["id"])) { ?>
+                <?php if(isset($_SESSION["username"])) { ?>
                     <li class="nav-item"><a class="nav-link" href="_logout.php">Logout</a></li>
                 <?php } else { ?>
                 <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>

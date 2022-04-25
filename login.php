@@ -1,46 +1,3 @@
-<?php
-
-$user = $_POST["username"];
-$pass = $_POST["password"];
-$res = "forkert";
-$login_result="Hello! You are logged in";
-$btn = "Logout";
-
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$db = "logindb";
-
-$conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
-
-// $conn = OpenCon();
-$msg = "Connected Successfully";
-echo "<script type='text/javascript'>console.log('$msg');</script>";
-
-if($user == "test" && $pass == "1234") {
-    $res = "rigtigt";
- }
- 
- $sql = "SELECT username, password FROM bruger_tabel WHERE username='$user'";
- $result = $conn->query($sql);
- if($result->num_rows == 1) {
-     $row = mysqli_fetch_array($result);
-     if($row['password'] == $pass) {
-         $res = "Success";
-     } else {
-         $login_result = "Please Try again";
-         $res = "User found, password is incorrect!";
-         $btn = "Login";
-     }
- } else {
-    $login_result = "Please Try again";
-     $res = "User not found";
-     $btn = "Login";
- }
-
- $conn -> close();
-
-?>
 
 <html lang="en">
 <head>
@@ -68,11 +25,11 @@ if($user == "test" && $pass == "1234") {
                             <form action="_login.php" method="post">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Username</label>
-                                    <input name="id"type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username">
+                                    <input name="username" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                 </div>
                                 <button type="submit" class="btn">Login</button>
                             </form>
