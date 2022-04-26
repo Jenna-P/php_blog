@@ -1,10 +1,14 @@
+<?php
+  $activePage = basename($_SERVER['PHP_SELF'], ".php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Travel Blog - Home</title>
+    <title>Travel Blog</title>
     <link rel="icon" href="img/Fevicon.png" type="image/png" />
 
     <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css" />
@@ -15,6 +19,7 @@
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
 
     <link rel="stylesheet" href="css/style.css" />
+    
   </head>
   <body>
     <!--================Header Menu Area =================-->
@@ -28,13 +33,14 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
+              
             </button>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
               <ul class="nav navbar-nav menu_nav justify-content-center">
-                <li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="archive.php">Archive</a></li>
-                <li class="nav-item"><a class="nav-link" href="category.html">Category</a></li>
+                <li class="nav-item <?= ($activePage == 'index') ? 'active':''; ?> "><a class="nav-link" href="index.php">Home</a></li>
+                <li class="nav-item <?= ($activePage == 'archive') ? 'active':''; ?>"><a class="nav-link" href="archive.php">Archive</a></li>
+                <li class="nav-item <?= ($activePage == 'category') ? 'active':''; ?>"><a class="nav-link" href="category.php">Category</a></li>
                 <li class="nav-item submenu dropdown">
                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
                   <ul class="dropdown-menu">
@@ -45,9 +51,11 @@
               
               <ul class="nav navbar-nav navbar-right navbar-social">
                 <?php if(isset($_SESSION["username"])) { ?>
-                    <li class="nav-item"><a class="nav-link" href="_logout.php">Logout</a></li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="_logout.php" style="position: relative; left: 20px" ><span href="#" style="font-size: 13px; color: #3a414e;"><?php if(isset($_SESSION['username'])) { echo "Hello, "; echo $_SESSION['username']; echo " "; } ?></span>Logout</a>
+                    </li>
                 <?php } else { ?>
-                <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+                <li class="nav-item <?= ($activePage == 'login') ? 'active':''; ?>"><a class="nav-link" href="login.php">Login</a></li>
                 <?php } ?>
             </ul>
             </div>
@@ -55,4 +63,5 @@
         </nav>
       </div>
     </header>
+    
     <!--================Header Menu Area =================-->

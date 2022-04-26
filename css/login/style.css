@@ -38,6 +38,7 @@
           letter-spacing: 5px; } }
 
 
+
 .login-content {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
@@ -45,8 +46,9 @@
   z-index: 1;
   background-color: #fff;
   padding: 50px 100px;
+  text-align: center; 
  
-  text-align: center; }
+}
   @media only screen and (max-width: 767px) {
     .login-content {
       padding: 50px 30px; } }
@@ -74,6 +76,10 @@
     color: #ff9907;
   }
 
+  .buttonWrapper {
+    margin-top: 20px !important;
+  }
+
   .login-form .btn {
     background-color: rgb(255, 255, 255);
     transition-duration: 500ms;
@@ -93,7 +99,7 @@
     border-image: initial;
     border-radius: 0px;
     padding: 0px 30px;
-
+  
   }
 
   .login-form .btn:hover {

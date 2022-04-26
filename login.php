@@ -31,7 +31,9 @@
                                     <label for="exampleInputPassword1">Password</label>
                                     <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                 </div>
+                                <div class="buttonWrapper">
                                 <button type="submit" class="btn">Login</button>
+                                </div>
                             </form>
                             <div>
                             <p class="text-center">Not a member? <a data-toggle="tab" href="signUp.php">Sign Up</a></p>
