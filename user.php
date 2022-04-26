@@ -9,7 +9,9 @@
 <?php require('lib/header.php'); ?>
     <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(https://storage.needpix.com/rsynced_images/countryside-2371480_1280.jpg);">
         <div class="bradcumbContent">
-            <h2>Sign Up</h2>
+        <p>Edit user informations</p>
+            <h2><?php echo $_SESSION['username'];?></h2>
+           
         </div>
     </section>
     <section class="login-area section-padding-100">
@@ -20,14 +22,14 @@
                        
                         <!-- Sign up Form -->
                         <div class="login-form">
-                            <form action="_signup.php" method="post">
+                            <form action="_update.php" method="post">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Username</label>
-                                    <input name="username"  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username">
+                                    <input name="username"  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="<?php echo $_SESSION['username'];?>" value="<?php echo $_SESSION['username'];?>">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email</label>
-                                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="<?php echo $_SESSION['email'];?>">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Password</label>
@@ -37,8 +39,10 @@
                                     <label for="exampleInputPassword1">Check Password</label>
                                     <input name="checkPassword" type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
                                 </div>
-                                <button type="submit" class="btn">Signup</button>
+                                <button type="submit" class="btn">Edit</button>
                             </form>
+                                <button class="btn" onClick="location.href='_resign.php'">Resign</button>
+
                             <div>
                             <p class="text-center">Do you already have an account? <a data-toggle="tab" href="login.php">Sign In</a></p>
                             </div>

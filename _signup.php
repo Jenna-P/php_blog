@@ -5,6 +5,7 @@ require('_conn.php');
 $user = $_POST["username"];
 $pass = $_POST["password"];
 $email = $_POST["email"];
+$pwc = $_POST['checkPassword'];
 
  // username already exist
  $sql = "SELECT * FROM `user` WHERE id='$id'";
@@ -16,7 +17,7 @@ $email = $_POST["email"];
  }
 
  // not same 1pw and 2pw
- if ($pw != $pwc) {
+ if ($pass != $pwc) {
      echo "<script>alert('Check password.');location.href='signUp.php'</script>";
  }
 

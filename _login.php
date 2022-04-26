@@ -6,7 +6,7 @@ $user = $_POST["username"];
 $pass = $_POST["password"];
 
 
-$sql = "SELECT * FROM `user` WHERE username='$user' AND pw='$pass'";
+$sql = "SELECT * FROM `user` WHERE username='$user' AND pw='$pass' AND del_flg=0";
 $result = mysqli_query($conn, $sql);
 $row = $result->num_rows; 
 

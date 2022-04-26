@@ -29,6 +29,8 @@
           <div class="container box_1620">
             <!-- Brand and toggle get grouped for better mobile display -->
             <a class="navbar-brand logo_h" href="index.php"><img src="img/blog_logo.png" alt="" width="90" /></a>
+            <a href="user.php" style="font-size: 13px; color: #3a414e; position: relative; right:20px; top:24px; font-family: Lora,serif; font-weight: 700;"><?php if(isset($_SESSION['username'])) { echo "Hello, "; echo $_SESSION['username']; } ?></a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -51,8 +53,9 @@
               
               <ul class="nav navbar-nav navbar-right navbar-social">
                 <?php if(isset($_SESSION["username"])) { ?>
+                  <!-- <a href="user.php" style="font-size: 13px; color: #3a414e; position: relative; right:7px;  top:32px; font-family: Lora,serif; font-weight: 700;"><?php if(isset($_SESSION['username'])) { echo "Hello, "; echo $_SESSION['username']; } ?></a> -->
                     <li class="nav-item">
-                      <a class="nav-link" href="_logout.php" style="position: relative; left: 20px" ><span href="#" style="font-size: 13px; color: #3a414e;"><?php if(isset($_SESSION['username'])) { echo "Hello, "; echo $_SESSION['username']; echo " "; } ?></span>Logout</a>
+                        <a class="nav-link" href="_logout.php">Logout</a>
                     </li>
                 <?php } else { ?>
                 <li class="nav-item <?= ($activePage == 'login') ? 'active':''; ?>"><a class="nav-link" href="login.php">Login</a></li>
