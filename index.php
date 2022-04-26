@@ -81,16 +81,16 @@
       <section class="blog-post-area section-margin mt-4">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-12">
               <div class="single-recent-blog-post">
                 <div class="thumb">
-                  <img class="img-fluid" src="img/blog/blog1.png" alt="" />
+                  <img class="img-fluid" src="https://worldinparis.com/wp-content/uploads/2019/10/Travel-to-Paris.jpg" alt="" width=100%/>
                   <ul class="thumb-info">
                     <li>
                       <a href="#"><i class="ti-user"></i>Admin</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ti-notepad"></i>January 12,2019</a>
+                      <a href="#"><i class="ti-notepad"></i>April 12,2021</a>
                     </li>
                     <li>
                       <a href="#"><i class="ti-themify-favicon"></i>2 Comments</a>
@@ -99,88 +99,14 @@
                 </div>
                 <div class="details mt-20">
                   <a href="blog-single.html">
-                    <h3>Woman claims husband wants to name baby girl after his ex-lover sparking.</h3>
+                    <h3>Visiting Paris for the First Time? Check out These 10 Paris Tips by a Local.</h3>
                   </a>
                   <p class="tag-list-inline">Tag: <a href="#">travel</a>, <a href="#">life style</a>, <a href="#">technology</a>, <a href="#">fashion</a></p>
-                  <p>Over yielding doesn't so moved green saw meat hath fish he him from given yielding lesser cattle were fruitful lights. Given let have, lesser their made him above gathered dominion sixth. Creeping deep said can't called second. Air created seed heaven sixth created living</p>
+                  <p>From its stunning monuments and history-rich streets to its exceptional cuisine and museum culture, Paris is a destination unlike any other. The city has been drawing in travelers for centuries. Wander in and out of Parisian cafes, markets, beautiful gardens, and enjoy the romance of the city sights. After all, it's called the City of Lights and the City of Love for a reason. This ultimate Paris travel guide will help you plan an unforgettable trip, including the best places to stay, eat and see in Paris.</p>
                   <a class="button" href="#">Read More <i class="ti-arrow-right"></i></a>
                 </div>
               </div>
 
-              <div class="single-recent-blog-post">
-                <div class="thumb">
-                  <img class="img-fluid" src="img/blog/blog2.png" alt="" />
-                  <ul class="thumb-info">
-                    <li>
-                      <a href="#"><i class="ti-user"></i>Admin</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="ti-notepad"></i>January 12,2019</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="ti-themify-favicon"></i>2 Comments</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="details mt-20">
-                  <a href="blog-single.html">
-                    <h3>Woman claims husband wants to name baby girl after his ex-lover sparking.</h3>
-                  </a>
-                  <p class="tag-list-inline">Tag: <a href="#">travel</a>, <a href="#">life style</a>, <a href="#">technology</a>, <a href="#">fashion</a></p>
-                  <p>Over yielding doesn't so moved green saw meat hath fish he him from given yielding lesser cattle were fruitful lights. Given let have, lesser their made him above gathered dominion sixth. Creeping deep said can't called second. Air created seed heaven sixth created living</p>
-                  <a class="button" href="#">Read More <i class="ti-arrow-right"></i></a>
-                </div>
-              </div>
-
-              <div class="single-recent-blog-post">
-                <div class="thumb">
-                  <img class="img-fluid" src="img/blog/blog3.png" alt="" />
-                  <ul class="thumb-info">
-                    <li>
-                      <a href="#"><i class="ti-user"></i>Admin</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="ti-notepad"></i>January 12,2019</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="ti-themify-favicon"></i>2 Comments</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="details mt-20">
-                  <a href="blog-single.html">
-                    <h3>Tourist deaths in Costa Rica jeopardize safe dest ination reputation all time.</h3>
-                  </a>
-                  <p class="tag-list-inline">Tag: <a href="#">travel</a>, <a href="#">life style</a>, <a href="#">technology</a>, <a href="#">fashion</a></p>
-                  <p>Over yielding doesn't so moved green saw meat hath fish he him from given yielding lesser cattle were fruitful lights. Given let have, lesser their made him above gathered dominion sixth. Creeping deep said can't called second. Air created seed heaven sixth created living</p>
-                  <a class="button" href="#">Read More <i class="ti-arrow-right"></i></a>
-                </div>
-              </div>
-
-              <div class="single-recent-blog-post">
-                <div class="thumb">
-                  <img class="img-fluid" src="img/blog/blog4.png" alt="" />
-                  <ul class="thumb-info">
-                    <li>
-                      <a href="#"><i class="ti-user"></i>Admin</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="ti-notepad"></i>January 12,2019</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="ti-themify-favicon"></i>2 Comments</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="details mt-20">
-                  <a href="blog-single.html">
-                    <h3>Tourist deaths in Costa Rica jeopardize safe dest ination reputation all time.</h3>
-                  </a>
-                  <p class="tag-list-inline">Tag: <a href="#">travel</a>, <a href="#">life style</a>, <a href="#">technology</a>, <a href="#">fashion</a></p>
-                  <p>Over yielding doesn't so moved green saw meat hath fish he him from given yielding lesser cattle were fruitful lights. Given let have, lesser their made him above gathered dominion sixth. Creeping deep said can't called second. Air created seed heaven sixth created living</p>
-                  <a class="button" href="#">Read More <i class="ti-arrow-right"></i></a>
-                </div>
-              </div>
 
               <div class="row">
                 <div class="col-lg-12">
@@ -209,7 +135,7 @@
             </div>
 
             <!-- Start Blog Post Siddebar -->
-            <div class="col-lg-4 sidebar-widgets">
+            <!-- <div class="col-lg-4 sidebar-widgets">
               <div class="widget-wrap">
                 <div class="single-sidebar-widget newsletter-widget">
                   <h4 class="single-sidebar-widget__title">Newsletter</h4>
@@ -336,96 +262,14 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- End Blog Post Siddebar -->
         </div>
       </section>
       <!--================ End Blog Post Area =================-->
     </main>
 
-    <!--================ Start Footer Area =================-->
-    <footer class="footer-area section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="single-footer-widget">
-              <h6>About Us</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6">
-            <div class="single-footer-widget">
-              <h6>Newsletter</h6>
-              <p>Stay update with our latest</p>
-              <div class="" id="mc_embed_signup">
-                <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
-                  <div class="d-flex flex-row">
-                    <input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email" />
-
-                    <button class="click-btn btn btn-default"><span class="lnr lnr-arrow-right"></span></button>
-                    <div style="position: absolute; left: -5000px">
-                      <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text" />
-                    </div>
-
-                    <!-- <div class="col-lg-4 col-md-4">
-                        <button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
-                      </div>  -->
-                  </div>
-                  <div class="info"></div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="single-footer-widget mail-chimp">
-              <h6 class="mb-20">Instragram Feed</h6>
-              <ul class="instafeed d-flex flex-wrap">
-                <li><img src="img/instagram/i1.jpg" alt="" /></li>
-                <li><img src="img/instagram/i2.jpg" alt="" /></li>
-                <li><img src="img/instagram/i3.jpg" alt="" /></li>
-                <li><img src="img/instagram/i4.jpg" alt="" /></li>
-                <li><img src="img/instagram/i5.jpg" alt="" /></li>
-                <li><img src="img/instagram/i6.jpg" alt="" /></li>
-                <li><img src="img/instagram/i7.jpg" alt="" /></li>
-                <li><img src="img/instagram/i8.jpg" alt="" /></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 col-sm-6">
-            <div class="single-footer-widget">
-              <h6>Follow Us</h6>
-              <p>Let us be social</p>
-              <div class="footer-social d-flex align-items-center">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-dribbble"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-behance"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
-          <p class="footer-text m-0">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
-        </div>
-      </div>
-    </footer>
-    <!--================ End Footer Area =================-->
+    <?php require('lib/footer.php'); ?>
 
     <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
     <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>

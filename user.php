@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php require('lib/header.php'); ?>
-    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(https://storage.needpix.com/rsynced_images/countryside-2371480_1280.jpg);">
+    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url('img/banner/banner.png');">
         <div class="bradcumbContent">
         <p>Edit user informations</p>
             <h2><?php echo $_SESSION['username'];?></h2>
@@ -43,9 +43,6 @@
                             </form>
                                 <button class="btn" onClick="location.href='_resign.php'">Resign</button>
 
-                            <div>
-                            <p class="text-center">Do you already have an account? <a data-toggle="tab" href="login.php">Sign In</a></p>
-                            </div>
                         </div>
                     </div>
                 </div>

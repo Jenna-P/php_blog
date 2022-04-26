@@ -7,9 +7,12 @@
     $pass = $_POST['password'];
     $pwc = $_POST['checkPassword'];
     
-   
+   //still in DB
     $sql = "UPDATE `user` SET `del_flg` = 1  WHERE `id`=$id";
     $result = mysqli_query($conn, $sql);
+
+  // Delete DB
+    // $sql = "DELETE FROM `user` WHERE `id`=$id ";
 
     if ($result) {
         $sql = "SELECT * FROM `user` WHERE id='$id'";

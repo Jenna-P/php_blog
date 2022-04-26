@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php require('lib/header.php'); ?>
-    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(https://storage.needpix.com/rsynced_images/countryside-2371480_1280.jpg);">
+    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url('img/banner/banner.png'); ">
         <div class="bradcumbContent">
             <h2>Login</h2>
         </div>

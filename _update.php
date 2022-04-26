@@ -23,6 +23,6 @@
             $_SESSION['username'] = $users['username'];
             $_SESSION['email'] = $users['email'];
         }
-        echo "<script>alert('Changed your informations');location.href='user.php'</script>";
+        echo "<script>alert('Successfully changed your informations');location.href='user.php'</script>";
     }
 ?>
