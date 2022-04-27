@@ -1,4 +1,5 @@
 <?php require('lib/header.php'); ?>
+<?php require('_blogpage.php'); ?>
 
     <main class="site-main">
       <!--================Hero Banner start =================-->
@@ -90,7 +91,9 @@
                       <a href="#"><i class="ti-user"></i>Admin</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ti-notepad"></i>April 12,2021</a>
+                      <a href="#"><i class="ti-notepad"></i>
+                    27 april,2022
+                    </a>
                     </li>
                     <li>
                       <a href="#"><i class="ti-themify-favicon"></i>2 Comments</a>

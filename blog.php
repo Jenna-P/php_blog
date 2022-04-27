@@ -1,6 +1,25 @@
 
 <?php require('lib/header.php'); ?>
 <?php require('_blogpage.php'); ?>
+
+<style>
+   .buttonWrapper{
+     display: flex;
+     justify-content: flex-end;
+     position: relative;
+     bottom: 60px;
+   }
+
+   .newButton {
+     background-color: transparent;
+     width: 70px;
+   }
+
+   .newButton:hover {
+    background-color: black;
+    color: #fff;
+   }
+</style>
   
   <!--================ Hero sm Banner start =================-->    
   <section class="mb-30px">
@@ -19,10 +38,12 @@
   <!--================ Start Blog Post Area =================-->
   <section class="blog-post-area section-margin">
     <div class="container">
+      <div class="buttonWrapper">
+            <button class="newButton" onclick="location.href='blognew.php'">New</button>
+      </div>
       <div class="row">
         <div class="col-lg-12">
           <div class="row">
-          
             <?php 
                 foreach($result as $blog){
             ?>
@@ -32,14 +53,31 @@
                   <img class="card-img rounded-0" src="https://worldinparis.com/wp-content/uploads/2019/10/Travel-to-Paris.jpg" alt="">
                   <ul class="thumb-info">
                     <li><a href="#"><i class="ti-user"></i>Admin</a></li>
-                    <li><a href="#"><i class="ti-themify-favicon"></i>2 Comments</a></li>
+                    <li><a href="#"><i class="ti-themify-favicon"></i>
+                    <?php
+                      $day = date("d", strtotime($blog['reg_dat']));
+                      $month = date("F", strtotime($blog['reg_dat']));
+                      $year = date("Y", strtotime($blog['reg_dat']));
+                    ?>
+                    <span><?=$day;?></span><span><?=$month;?>, <?=$year;?></span>
+                    </a></li>
                   </ul>
                 </div>
                 <div class="details mt-20">
                   <a href="blog-single.html">
                     <h3><?=$blog['title'];?></h3>
                   </a>
-                  <p><?=$blog['content'];?></p>
+                  <p>
+                  <?php
+                      if (strlen($blog['content']) > 150) {
+                      // cut the email string
+                      $emailCut= substr($blog['content'], 0, 150);
+                      //ensure that it ends with a whole word
+                      $blog['content'] = substr($emailCut, 0, strrpos($emailCut, ' ')).'...</br>'; 
+                      }
+                      echo $blog['content'];
+                      ?>
+                  </p>
                   <a class="button" href="#">Read More <i class="ti-arrow-right"></i></a>
                 </div>
               </div>
