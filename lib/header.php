@@ -41,8 +41,8 @@
             <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
               <ul class="nav navbar-nav menu_nav justify-content-center">
                 <li class="nav-item <?= ($activePage == 'index') ? 'active':''; ?> "><a class="nav-link" href="index.php">Home</a></li>
-                <li class="nav-item <?= ($activePage == 'archive') ? 'active':''; ?>"><a class="nav-link" href="archive.php">Archive</a></li>
-                <li class="nav-item <?= ($activePage == 'category') ? 'active':''; ?>"><a class="nav-link" href="category.php">Category</a></li>
+                <li class="nav-item <?= ($activePage == 'archive') ? 'active':''; ?>"><a class="nav-link" href="blog.php">Blog</a></li>
+                <!-- <li class="nav-item <?= ($activePage == 'category') ? 'active':''; ?>"><a class="nav-link" href="category.php">Category</a></li> -->
                 <li class="nav-item submenu dropdown">
                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
                   <ul class="dropdown-menu">
