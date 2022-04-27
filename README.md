@@ -1,16 +1,11 @@
 # Travel blog
-This is a simple blog
+This is a simple blog for practicing PHP
 
 ## Used Languages
-
-- #### Front End langusges
-    - [HTML](http://html)
-    - [CSS](css)
-    - [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
-
-- #### Back End langusges
-    - [PHP](http://php)
-    - [MySQL](mysql)
-
-
+- JavaScript
+- HTML
+- CSS
+- PHP
+- MYSQL
+- [Bootstrap templetes](https://colorlib.com/wp/free-bootstrap-blog-templates/)
 
