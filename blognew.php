@@ -22,13 +22,13 @@
                        
                         <!--  Form -->
                         <div class="login-form">
-                            <form action="_login.php" method="post">
+                            <form action="_blognew.php" method="post">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Title</label>
-                                    <input name="username" type="text" class="form-control" aria-describedby="emailHelp">
+                                    <input name="title" type="text" class="form-control" aria-describedby="emailHelp">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">New post</label>
+                                    <label for="exampleInputEmail1">Article</label>
                                     <textarea name="content" class="form-control" style="height: 500px"></textarea>                                
                                 </div>
                                 <div class="form-group">

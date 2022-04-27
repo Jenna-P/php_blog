@@ -82,14 +82,9 @@
                 </div>
               </div>
             </div>
-
             <?php } ?>
-          
           </div>
           
-           
-          
-
           
                 <!-- Pagenation -->
           <div class="row">

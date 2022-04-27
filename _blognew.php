@@ -1,6 +1,24 @@
 <?php
 
-  require('_conn.php');
-  $sql = "INSERT INTO `blog_table` (`username`, `title`, `category`, `content`, `img_file`, `img_size`) VALUES ('$name', '$title', '$category', '$content', '$id', '$file_name', '$img_size')";
-  mysqli_query($conn, $sql);
+require('_conn.php');
+
+$user = $_SESSION['username'];
+$title = $_POST['title'];
+$content = $_POST['content'];
+
+$img_file = $_FILES['img_file'];
+$img_size = $_FILES['img_file']['size'];
+
+  
+  $sql = "INSERT INTO `blog_table` (`no`,`title`,`content`, `img_file`, `img_size`) VALUE (NULL, '$title', '$content', NULL, NULL)";
+  $result = mysqli_query($conn, $sql);
+
+  if ($result) {
+    echo "<script>alert('Signed in successfully!');location.href='blog.php'</script>";
+}
+
+$conn -> close();
+
 ?>
+
+
