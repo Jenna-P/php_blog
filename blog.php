@@ -7,7 +7,8 @@
      display: flex;
      justify-content: flex-end;
      position: relative;
-     bottom: 60px;
+     bottom: 30px;
+    
    }
 
    .newButton {
@@ -19,6 +20,8 @@
     background-color: black;
     color: #fff;
    }
+
+   
 </style>
   
   <!--================ Hero sm Banner start =================-->    
@@ -39,7 +42,7 @@
   <section class="blog-post-area section-margin">
     <div class="container">
       <div class="buttonWrapper">
-            <button class="newButton" onclick="location.href='blognew.php'">New</button>
+            <button class="newButton" onclick="location.href='blognew.php'">+ New</button>
       </div>
       <div class="row">
         <div class="col-lg-12">
@@ -53,7 +56,7 @@
                   <img class="card-img rounded-0" src="https://worldinparis.com/wp-content/uploads/2019/10/Travel-to-Paris.jpg" alt="">
                   <ul class="thumb-info">
                     <li><a href="#"><i class="ti-user"></i>Admin</a></li>
-                    <li><a href="#"><i class="ti-themify-favicon"></i>
+                    <li><a href="#"><i class="ti-notepad"></i>
                     <?php
                       $day = date("d", strtotime($blog['reg_dat']));
                       $month = date("F", strtotime($blog['reg_dat']));

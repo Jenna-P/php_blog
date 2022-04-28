@@ -14,7 +14,7 @@ $img_size = $_FILES['img_file']['size'];
   $result = mysqli_query($conn, $sql);
 
   if ($result) {
-    echo "<script>alert('Signed in successfully!');location.href='blog.php'</script>";
+    echo "<script>alert('Posted successfully!');location.href='blog.php'</script>";
 }
 
 $conn -> close();
