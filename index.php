@@ -104,13 +104,11 @@
                   <a href="blog-single.html">
                     <h3>Visiting Paris for the First Time? Check out These 10 Paris Tips by a Local.</h3>
                   </a>
-                  <p class="tag-list-inline">Tag: <a href="#">travel</a>, <a href="#">life style</a>, <a href="#">technology</a>, <a href="#">fashion</a></p>
                   <p>From its stunning monuments and history-rich streets to its exceptional cuisine and museum culture, Paris is a destination unlike any other. The city has been drawing in travelers for centuries. Wander in and out of Parisian cafes, markets, beautiful gardens, and enjoy the romance of the city sights. After all, it's called the City of Lights and the City of Love for a reason. This ultimate Paris travel guide will help you plan an unforgettable trip, including the best places to stay, eat and see in Paris.</p>
-                  <a class="button" href="#">Read More <i class="ti-arrow-right"></i></a>
+                  <a class="button" href="detail.php">Read More <i class="ti-arrow-right"></i></a>
                 </div>
               </div>
-
-
+              
               <div class="row">
                 <div class="col-lg-12">
                   <nav class="blog-pagination justify-content-center d-flex">

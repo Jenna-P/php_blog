@@ -2,18 +2,14 @@
 
 <?php 
     require('_conn.php');    
-    $no = $_GET['no'];
-    
-
-    echo "<script>console.log('Debug Objects: " . $no . "');</script>";    
-
-    $sql = "SELECT * FROM `blog_table` WHERE `no`= $no";
+   
+    $sql = "SELECT * FROM `blog_table` WHERE `no`= 3";
     $result = mysqli_query($conn, $sql);
 
-    $sqlPrev = "SELECT title FROM `blog_table` WHERE `no`= $no-1 AND `del_flg`= 0";
+    $sqlPrev = "SELECT title FROM `blog_table` WHERE `no`= 2 ";
     $prevResult = mysqli_query($conn, $sqlPrev);
 
-    $sqlNext = "SELECT title FROM `blog_table` WHERE `no`= $no+1 AND `del_flg`= 0";
+    $sqlNext = "SELECT title FROM `blog_table` WHERE `no`= 4 ";
     $nextResult = mysqli_query($conn, $sqlNext);
      
 ?>
@@ -28,7 +24,7 @@
       <div class="row">
         <div class="col-lg-12">
             <div class="main_blog_details">
-                <img class="img-fluid" src="img/blog/blog4.png" alt="" width=100%>
+                <img class="img-fluid" src="https://worldinparis.com/wp-content/uploads/2019/10/Travel-to-Paris.jpg" alt="" width=100%>
                 <h4><?=$blog['title'];?></h4>
                 <div class="user_details">
                   <div class="float-left">
@@ -98,7 +94,7 @@
                 </div>
 
                 <div class="reply-btn" style="display: flex; justify-content: flex-end; margin: 10px">
-                   <button  class="btn-reply text-uppercase" onclick="location.href='blogedit.php?no=<?=$no;?>'" style="margin-right: 10px; background-color: transparent;">Edit</button> 
+                   <button  class="btn-reply text-uppercase" style="margin-right: 10px; background-color: transparent;">Edit</button> 
                    <button  class="btn-reply text-uppercase" onclick="location.href='_blogdelete.php?no=<?=$no;?>'" style="background-color: transparent;">Delete</button>
                 </div>
 

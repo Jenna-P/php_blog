@@ -45,7 +45,7 @@
                 <li class="nav-item submenu dropdown">
                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
                   <ul class="dropdown-menu">
-                    <li class="nav-item"><a class="nav-link" href="blog-details.php">Blog Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="detail.php">Blog Details</a></li>
                   </ul>
                 </li>
               </ul>
