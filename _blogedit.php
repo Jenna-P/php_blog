@@ -1,20 +1,16 @@
 <?php
-    require('_conn.php');
-    
-
+   
     $no = $_POST['no'];
     $title = $_POST['title'];
     $content = $_POST['content'];
-
-    echo "<script>console.log('Debug Objects: " . $title . "');</script>";  
     
     require('_upload.php');
 
     if($result) {
-        // 파일이 있을 경우
+        // with file
         $sql = "UPDATE `blog_table` SET  `title`='$title', `content`='$content' `img_file`='$filename', `img_size=$img_size`  WHERE `no`=$no";
     } else {
-        // 파일이 없을 경우
+        // without file
         $sql = "UPDATE `blog_table` SET  `title`='$title', `content`='$content'  WHERE `no`=$no";
     }
 
@@ -26,9 +22,11 @@
   }
   
    
-
+    require('_conn.php');
     $result = mysqli_query($conn, $sql);
     if ($result) {
         echo "<script>alert('Edited blog post successfully!');location.href='blog.php'</script>";
     }
+
+    $conn -> close();
 ?>

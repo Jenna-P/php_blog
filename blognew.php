@@ -32,7 +32,7 @@
                                     <textarea name="content" class="form-control" style="height: 500px"></textarea>                                
                                 </div>
                                 <div class="form-group">
-                                    <input name="img_file" type="file" class="form-control">
+                                    <input name="img_file" type="file">
                                 </div>
                                 <div class="buttonWrapper">
                                 <button type="submit" class="btn" name="submit">Submit</button>

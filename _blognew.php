@@ -16,7 +16,7 @@ echo "<script>console.log('upload: " . $msg . "');</script>";
 require('_conn.php');
 $result = mysqli_query($conn, $sql);
 if ($result) {
-    echo "<script>alert('글 작성이 완료되었습니다.');location.href='blog.php'</script>";
+    echo "<script>alert('Posted successfully!');location.href='blog.php'</script>";
 }
 
 $conn -> close();

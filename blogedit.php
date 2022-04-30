@@ -28,7 +28,7 @@
                     <div class="login-content">
                         <!--  Form -->
                         <div class="login-form">
-                            <form action="_blogedit.php" method="post">
+                            <form action="_blogedit.php" enctype="multipart/form-data"  method="POST" >
 
                                 <input name="no" type="hidden" value="<?=$no;?>">
                                 
@@ -41,7 +41,7 @@
                                     <textarea name="content" class="form-control" style="height: 500px"><?=$edit['content'];?></textarea>                                
                                 </div>
                                 <div class="form-group">
-                                    <input name="img_file" type="file" value="<?=$edit['img_file'];?>">
+                                    <input name="img_file" type="file">
                                 </div>
                                 <div class="buttonWrapper">
                                 <button type="submit" class="btn">Edit</button>

@@ -54,9 +54,9 @@
               <div class="single-recent-blog-post card-view">
                 <div class="thumb">
                 <?php if($blog['img_file']) { ?>
-                  <img class="card-img rounded-0" src="uploads/<?=$blog['img_file'];?>" alt="blogimg">
+                  <img class="card-img rounded-0" src="uploads/<?=$blog['img_file'];?>" alt="blogimg" height="190px">
                   <?php } else { ?>
-                    <img class="card-img rounded-0" src="uploads/default.jpg" alt="default" height="190px">
+                    <img class="card-img rounded-0" src="uploads/noimage.jpg" alt="default" height="190px">
                   <?php } ?>
                   <ul class="thumb-info">
                     <li><a href="#"><i class="ti-user"></i>Admin</a></li>
