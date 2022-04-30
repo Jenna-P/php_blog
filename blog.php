@@ -81,7 +81,7 @@
                       echo $blog['content'];
                       ?>
                   </p>
-                  <a class="button" href="#">Read More <i class="ti-arrow-right"></i></a>
+                  <button class="button" onclick="location.href='blog-details.php?no=<?=$blog['no'];?>'">Read More <i class="ti-arrow-right"></i></button>
                 </div>
               </div>
             </div>
