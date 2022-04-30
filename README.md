@@ -6,10 +6,10 @@ This is a simple blog for practicing PHP
 
 
 ## Used Languages
+- PHP
+- MYSQL
 - JavaScript
 - HTML
 - CSS
-- PHP
-- MYSQL
 - [Bootstrap templetes](https://colorlib.com/wp/free-bootstrap-blog-templates/)
 
