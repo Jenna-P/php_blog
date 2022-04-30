@@ -3,9 +3,9 @@
 <?php 
     require('_conn.php');    
     $no = $_GET['no'];
-    $nextNo = $no +1;
+    
 
-    echo "<script>console.log('Debug Objects: " . $nextNo . "');</script>";    
+    echo "<script>console.log('Debug Objects: " . $no . "');</script>";    
 
     $sql = "SELECT * FROM `blog_table` WHERE `no`= $no";
     $result = mysqli_query($conn, $sql);
@@ -116,7 +116,7 @@
 
                 <div class="reply-btn" style="display: flex; justify-content: flex-end; margin: 10px">
                    <button  class="btn-reply text-uppercase" style="margin-right: 10px; background-color: transparent;">Edit</button> 
-                   <button  class="btn-reply text-uppercase" style="background-color: transparent;">Delete</button>
+                   <button  class="btn-reply text-uppercase" onclick="location.href='_blogdelete.php?no=<?=$no;?>'" style="background-color: transparent;">Delete</button>
                 </div>
 
 
