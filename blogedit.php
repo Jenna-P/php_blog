@@ -41,7 +41,7 @@
                                     <textarea name="content" class="form-control" style="height: 500px"><?=$edit['content'];?></textarea>                                
                                 </div>
                                 <div class="form-group">
-                                    <input name="img_file" type="file">
+                                    <input name="img_file" type="file" value="<?=$edit['img_file'];?>">
                                 </div>
                                 <div class="buttonWrapper">
                                 <button type="submit" class="btn">Edit</button>

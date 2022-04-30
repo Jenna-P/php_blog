@@ -53,7 +53,11 @@
             <div class="col-md-4">
               <div class="single-recent-blog-post card-view">
                 <div class="thumb">
-                  <img class="card-img rounded-0" src="https://worldinparis.com/wp-content/uploads/2019/10/Travel-to-Paris.jpg" alt="">
+                <?php if($blog['img_file']) { ?>
+                  <img class="card-img rounded-0" src="uploads/<?=$blog['img_file'];?>" alt="blogimg">
+                  <?php } else { ?>
+                    <img class="card-img rounded-0" src="uploads/default.jpg" alt="default" height="190px">
+                  <?php } ?>
                   <ul class="thumb-info">
                     <li><a href="#"><i class="ti-user"></i>Admin</a></li>
                     <li><a href="#"><i class="ti-notepad"></i>

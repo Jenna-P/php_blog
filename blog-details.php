@@ -28,7 +28,7 @@
       <div class="row">
         <div class="col-lg-12">
             <div class="main_blog_details">
-                <img class="img-fluid" src="img/blog/blog4.png" alt="" width=100%>
+                <img class="img-fluid" src="img/blog_img/<?=$blog['img_file'];?>" alt="blog_img" width=100%>
                 <h4><?=$blog['title'];?></h4>
                 <div class="user_details">
                   <div class="float-left">

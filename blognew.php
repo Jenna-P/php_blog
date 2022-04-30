@@ -22,7 +22,7 @@
                        
                         <!--  Form -->
                         <div class="login-form">
-                            <form action="_blognew.php" method="post">
+                            <form action="_blognew.php" enctype="multipart/form-data"  method="POST" >
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Title</label>
                                     <input name="title" type="text" class="form-control" aria-describedby="emailHelp">
@@ -32,10 +32,10 @@
                                     <textarea name="content" class="form-control" style="height: 500px"></textarea>                                
                                 </div>
                                 <div class="form-group">
-                                    <input name="img_file" type="file">
+                                    <input name="img_file" type="file" class="form-control">
                                 </div>
                                 <div class="buttonWrapper">
-                                <button type="submit" class="btn">Submit</button>
+                                <button type="submit" class="btn" name="submit">Submit</button>
                                 </div>
                             </form>
                             <div>
